@@ -1,0 +1,24 @@
+﻿<Window x:Class="AmortizationScheduleApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShippingOrders.WPF"
+        mc:Ignorable="d"
+        Title="Amortization Schedule" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="SpitzerCalc" Content="חשב לוח שפיצר ל12 חודשים" HorizontalAlignment="Left" Margin="69,10,0,0" VerticalAlignment="Top" Width="216" Height="30" Click="SpitzerCalc_Click"/>
+        <Button x:Name="LoanRecycleCalc" Content="(מיחזור חוב לאחר 12 חודשים(ריבית 4.5%" HorizontalAlignment="Left" Margin="69,55,0,0" VerticalAlignment="Top" Width="216" Height="30" Click="LoanRecycleCalc_Click" IsEnabled="False"/>
+        <DataGrid x:Name="dataGridView" Margin="0,98,0,0"  />
+        <Label Content="סכום הלוואה" HorizontalAlignment="Left" Margin="664,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="LoanAmount" HorizontalAlignment="Left" Margin="552,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="24"/>
+        <Label Content="(תקופת ההלוואה(בחודשים" HorizontalAlignment="Left" Margin="629,36,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="LoanPeriod" HorizontalAlignment="Left" Margin="552,37,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="24"/>
+        <Label Content="ריבית" HorizontalAlignment="Left" Margin="683,62,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Interest" HorizontalAlignment="Left" Margin="552,63,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" Height="24"/>
+        <Label Content="%" HorizontalAlignment="Left" Margin="593,61,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.247,-0.022"/>
+        <Label Content="פריים" HorizontalAlignment="Left" Margin="448,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Prime"  HorizontalAlignment="Center" Margin="0,12,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" Height="24"/>
+        <Label Content="%" HorizontalAlignment="Left" Margin="423,11,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.247,-0.022"/>
+    </Grid>
+</Window>
