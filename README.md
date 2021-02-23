@@ -17,11 +17,13 @@ string connString = @"data source=DESKTOP-HFSR1GE\MSSQLSERVER01;initial catalog=
 ![alt text](https://github.com/netanel208/Amortization-Schedule-App/blob/master/images/1.PNG)
 
 - Fill the loan details.
-- Then press the ```חשב לוח שפיצר ל12 חודשים``` button.
+- Then click on ```חשב לוח שפיצר ל12 חודשים``` button.
 
 ![alt text](https://github.com/netanel208/Amortization-Schedule-App/blob/master/images/2.PNG)
 
-- After calculating the amortization schedule, the user may press the ```מיחזור חוב לאחר 12 חודשים(ריבית 4.5%)``` button.
+- After calculating the amortization schedule, the user may click on ```מיחזור חוב לאחר 12 חודשים(ריבית 4.5%)``` button to calculate loan
+recycle on the remaining amount (according to the amortization schedule table) with
+a fixed interest of 4.5% for an additional 48 payments.
 
 ![alt text](https://github.com/netanel208/Amortization-Schedule-App/blob/master/images/3.PNG)
 
